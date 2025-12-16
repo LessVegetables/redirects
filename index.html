@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Redirect Service</title>
+</head>
+
+<body>
+    <h1>Redirect Service</h1>
+
+    <p>
+        This domain is used as a lightweight redirect service for projects that
+        do not yet have a permanent home, or that may change destinations over
+        time.
+    </p>
+
+    <p>Here is where you can redirect to:</p>
+
+    <ul id="redirect-list"></ul>
+
+    <script src="/routes.js"></script>
+    <script>
+        const list = document.getElementById("redirect-list");
+
+        Object.entries(window.REDIRECT_ROUTES).forEach(([key, url]) => {
+            const li = document.createElement("li");
+
+            const a = document.createElement("a");
+            a.href = `/go/?to=${key}`;
+            a.textContent = `/go/?to=${key}`;
+
+            li.appendChild(a);
+            list.appendChild(li);
+        });
+    </script>
+</body>
+
+</html>
