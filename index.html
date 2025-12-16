@@ -19,18 +19,25 @@
 
     <ul id="redirect-list"></ul>
 
-    <script src="/routes.js"></script>
+    <!-- <script src="/routes.js"></script> -->
+    <script src="/Users/danielgehrman/Documents/Programming/Websites/redirects/routes.js"></script>
     <script>
         const list = document.getElementById("redirect-list");
 
-        Object.entries(window.REDIRECT_ROUTES).forEach(([key, url]) => {
+        Object.entries(window.REDIRECT_ROUTES).forEach(([key, { name, description, url }]) => {
             const li = document.createElement("li");
 
             const a = document.createElement("a");
             a.href = `/go/?to=${key}`;
-            a.textContent = `/go/?to=${key}`;
+            a.textContent = `${name}`;
+            // a.innerText = `${description}`;
+
+            const desc = document.createElement("div");
+            desc.className = "desc";
+            desc.textContent = description ?? "";
 
             li.appendChild(a);
+            if (description) li.appendChild(desc);
             list.appendChild(li);
         });
     </script>
