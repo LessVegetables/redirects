@@ -14,11 +14,11 @@
     <script>
         const params = new URLSearchParams(window.location.search);
         const key = params.get("to");
-        const destination = window.REDIRECT_ROUTES?.[key];
+        const route = window.REDIRECT_ROUTES?.[key];
+        const destination = route?.url;
 
         if (destination) {
-            // Avoids polluting browser history
-            window.location.replace(destination);
+            window.location.replace(destination); // replace() avoids polluting browser history
         } else {
             document.body.innerHTML = `
           <h1>Unknown redirect</h1>
