@@ -10,16 +10,14 @@
 <body>
     <p>Redirecting…</p>
 
+    <script src="/routes.js"></script>
     <script>
-        const routes = {
-            genai4: "https://example.com", // TODO: replace when ready
-        };
-
         const params = new URLSearchParams(window.location.search);
         const key = params.get("to");
-        const destination = routes[key];
+        const destination = window.REDIRECT_ROUTES?.[key];
 
         if (destination) {
+            // Avoids polluting browser history
             window.location.replace(destination);
         } else {
             document.body.innerHTML = `
