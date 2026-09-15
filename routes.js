@@ -38,7 +38,7 @@ window.REDIRECT_ROUTES = Object.freeze({
     },
     studak: {
         name: "Бумажный студак, пожалуйста",
-        description" "Бумажный студак",
+        description: "Бумажный студак",
         url: "https://бумажныйстудакпожалуйста.рф",
     },
 });
