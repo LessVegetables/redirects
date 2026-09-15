@@ -31,4 +31,14 @@ window.REDIRECT_ROUTES = Object.freeze({
         description: "GitHub: gvbelavin",
         url: "https://github.com/gvbelavin",
     },
+    myGoogleSpreadsheet: {
+        name: "My Google Spreadsheet",
+        description: "Таблица баллов весна 26",
+        url: "https://docs.google.com/spreadsheets/d/19_klhVPMM0vVxOSFrM5CaoSEotCUSyMQjLkMma0py2A/",
+    },
+    studak: {
+        name: "Бумажный студак, пожалуйста",
+        description" "Бумажный студак",
+        url: "https://бумажныйстудакпожалуйста.рф",
+    },
 });
