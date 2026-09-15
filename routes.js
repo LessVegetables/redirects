@@ -24,7 +24,7 @@ window.REDIRECT_ROUTES = Object.freeze({
     daniel_repo: {
         name: "Daniel's repo",
         description: "GitHub: lessvegetables",
-        url: "https://github.com/lessvegetables/",
+        url: "https://github.com/LessVegetables/jarvis-memory",
     },
     gleb_repo: {
         name: "Gleb's repo",
