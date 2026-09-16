@@ -29,7 +29,7 @@ window.REDIRECT_ROUTES = Object.freeze({
     gleb_repo: {
         name: "Gleb's repo",
         description: "GitHub: gvbelavin",
-        url: "https://github.com/gvbelavin",
+        url: "https://github.com/gvbelavin/Jarvis_from_Spartans",
     },
     myGoogleSpreadsheet: {
         name: "My Google Spreadsheet",
