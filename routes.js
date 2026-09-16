@@ -14,7 +14,7 @@ window.REDIRECT_ROUTES = Object.freeze({
     stepan_repo: {
         name: "Stepan's repo",
         description: "GitHub: dext01",
-        url: "https://github.com/dext01",
+        url: "https://github.com/dext01/esp32Jarvis",
     },
     daniil_repo: {
         name: "Daniil's repo",
